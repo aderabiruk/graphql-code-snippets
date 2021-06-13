@@ -1,0 +1,50 @@
+{
+  "name": "graphql-code-snippets",
+  "version": "1.0.0",
+  "description": "GraphQL Code Snippets",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "babel src --out-dir dist",
+    "dev": "nodemon --watch src --exec babel-node src",
+    "lint-fix": "standard --fix",
+    "lint": "standard --verbose | snazzy"
+  },
+  "keywords": [
+    "GraphQL",
+    "Code",
+    "Snippets"
+  ],
+  "author": "Biruk Adera",
+  "license": "ISC",
+  "dependencies": {
+    "@graphql-tools/merge": "^6.2.14",
+    "apollo-server-express": "^2.25.1",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "graphql": "^15.5.0",
+    "graphql-tools": "^4.0.8",
+    "lodash": "^4.17.21",
+    "log4js": "^6.3.0",
+    "moment": "^2.29.1",
+    "mongoose": "^5.12.13",
+    "mongoose-validation-error-handler": "^2.1.5",
+    "morgan": "^1.10.0",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.14.5",
+    "@babel/node": "^7.14.5",
+    "@babel/plugin-transform-runtime": "^7.14.5",
+    "@babel/preset-env": "^7.14.5",
+    "@babel/runtime": "^7.14.5",
+    "husky": "^6.0.0",
+    "nodemon": "^2.0.7",
+    "snazzy": "^9.0.0",
+    "standard": "^16.0.3"
+  }
+}
