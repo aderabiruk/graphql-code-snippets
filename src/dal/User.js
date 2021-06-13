@@ -1,4 +1,6 @@
+/* eslint-disable camelcase */
 import transform_mongoose_error from 'mongoose-validation-error-handler'
+/* eslint-disable camelcase */
 
 import User from '../models/iam/User'
 
@@ -21,7 +23,7 @@ function findMany (query = {}, sort = {}) {
   })
 }
 
-async function findOne (query = {}) {
+async function findOne (query = {}, sort = {}) {
   return new Promise((resolve, reject) => {
     User.findOne({ ...query, deleted_at: null }).sort(sort).exec((error, result) => {
       if (error) {

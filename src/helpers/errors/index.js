@@ -62,7 +62,7 @@ export class InternalServerError extends Error {
 export class ApolloInternalServerError extends ApolloError {
   constructor (error) {
     super(
-      [ error ? `Internal Server Error: ${error}` : messages.errors.internal_server_error ], 
+      [error ? `Internal Server Error: ${error}` : messages.errors.internal_server_error],
       500
     )
 
